@@ -1,0 +1,49 @@
+{
+  "parser": "babel-eslint",
+  "plugins": [
+    "react"
+  ],
+  "ecmaFeatures": {
+    "arrowFunctions": true,
+    "blockBindings": true,
+    "classes": true,
+    "defaultParams": true,
+    "destructuring": true,
+    "objectLiteralComputedProperties": true,
+    "objectLiteralDuplicateProperties": true,
+    "objectLiteralShorthandMethods": true,
+    "objectLiteralShorthandProperties": true,
+    "restParams": true,
+    "spread": true,
+    "templateStrings": true,
+    "jsx": true
+  },
+  "rules": {
+    "indent": [ 2, 2 ],
+    "comma-style": [ 2, "last" ],
+    "semi": 2,
+    "strict": 2,
+    "quotes": 0,
+    "new-cap": 0,
+    "no-underscore-dangle": 0,
+    "no-irregular-whitespace": 2,
+    "no-trailing-spaces": [ 2, { "skipBlankLines": true } ],
+    "no-unneeded-ternary": 2,
+    "no-multi-spaces": [2, { "exceptions": { "Property": true } }],
+    "lines-around-comment": [ 2, { "beforeBlockComment": true, "beforeLineComment": false } ],
+    "key-spacing": [ 2, { "beforeColon": true, "afterColon": true, "align": "colon" } ],
+    "valid-jsdoc": [ 2, {
+      "requireReturnDescription": false,
+      "requireParamDescription": false,
+      "prefer": {
+        "return": "returns"
+      }
+    }],
+    "object-shorthand": [ 2, "always" ],
+    "eol-last": 0,
+    "prefer-const": 2
+  },
+  "env": {
+    "node": true
+  }
+}
