@@ -1,12 +1,14 @@
 {
   "parser": "babel-eslint",
   "rules": {
+    "camelcase": [2, {"properties": "always"}],
     "indent": [ 2, 2 ],
     "comma-style": [ 2, "last" ],
     "semi": 2,
-    "strict": 2,
-    "quotes": 0,
+    "strict": [2, "global"],
+    "quotes": [1, "single"],
     "new-cap": 0,
+    "eqeqeq": 2,
     "no-underscore-dangle": 0,
     "no-irregular-whitespace": 2,
     "no-trailing-spaces": [ 2, { "skipBlankLines": true } ],
