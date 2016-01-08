@@ -1,5 +1,5 @@
 # codestyle
 
 ```
-npm install -g eslint babel-eslint
+npm install codestyle eslint babel-eslint eslint-plugin-react
 ```
