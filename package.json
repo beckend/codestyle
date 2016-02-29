@@ -1,11 +1,16 @@
 {
   "name": "codestyle",
-  "version": "2.0.1",
+  "version": "3.0.0",
   "description": "",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/.bin/_mocha"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "babel-eslint": "^5.0.0",
+    "eslint": "^2.2.0",
+    "mocha": "^2.4.5"
+  }
 }
