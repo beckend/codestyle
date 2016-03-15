@@ -1,10 +1,16 @@
 {
   "name": "codestyle",
   "version": "2.0.1",
-  "description": "",
+  "repository": "git@github.com:LeoGears/codestyle.git",
+  "description": "ESLint configuration used at Gears of Leo",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "contributors":[
+    "Mikael Abrahamsson <mikael.abrahamsson@gutro.se>",
+    "Sebastian Stenerdal <sebastian.stenerdal@gutro.se>",
+    "Enzo Martin <enzo.martin@gutro.se>"
+  ],
   "keywords": [],
   "author": "",
   "license": "ISC"
