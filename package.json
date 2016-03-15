@@ -1,11 +1,27 @@
 {
   "name": "codestyle",
-  "version": "2.0.1",
-  "description": "",
+  "version": "3.0.0",
+  "repository": "git@github.com:LeoGears/codestyle.git",
+  "description": "ESLint configuration used at Gears of Leo",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint test/**/*.js *.js",
+    "test": "./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha -- --full-trace",
+    "ci": "./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha -- -R tap > test-results.tap && ./node_modules/.bin/istanbul report clover",
+    "prepublish": "npm run lint && npm run test"
   },
+  "contributors":[
+    "Mikael Abrahamsson <mikael.abrahamsson@gutro.se>",
+    "Sebastian Stenerdal <sebastian.stenerdal@gutro.se>",
+    "Enzo Martin <enzo.martin@gutro.se>"
+  ],
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "eslint": "^2.4.0"
+  },
+  "devDependencies": {
+    "mocha": "^2.4.5",
+    "istanbul": "^0.4.2"
+  }
 }
