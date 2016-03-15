@@ -84,6 +84,7 @@
     "no-unused-expressions": 2,
     "no-useless-call": 2,
     "no-useless-concat": 2,
+    "one-var-declaration-per-line": [2, "always"],
     "no-void": 2,
     "no-warning-comments": [ 2, { "terms": [ "todo", "fixme" ], "location": "anywhere" }],
     "no-with": 2,
