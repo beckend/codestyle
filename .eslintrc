@@ -175,7 +175,7 @@
     "no-this-before-super": 2,
     "no-var": 0,
     "object-shorthand": [ 2, "always" ],
-    "prefer-arrow-callback": 2,
+    "prefer-arrow-callback": 1,
     "prefer-const": 2,
     "prefer-reflect": 0,
     "prefer-spread": 2,
