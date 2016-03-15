@@ -107,7 +107,7 @@
     "no-undef": 2,
     "no-undefined": 1,
     "no-unused-vars": 1,
-    "no-use-before-define": [2, { "functions": false, "classes": true }],
+    "no-use-before-define": [2, { "functions": true, "classes": true }],
     "eol-last": 0,
     "func-names": 0,
     "func-style": [ 2, "declaration", { "allowArrowFunctions": true } ],
