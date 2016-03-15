@@ -9,7 +9,7 @@
     "ci": "./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha -- -R tap > test-results.tap && ./node_modules/.bin/istanbul report clover",
     "prepublish": "npm run lint && npm run test"
   },
-  "contributors":[
+  "contributors": [
     "Mikael Abrahamsson <mikael.abrahamsson@gutro.se>",
     "Sebastian Stenerdal <sebastian.stenerdal@gutro.se>",
     "Enzo Martin <enzo.martin@gutro.se>"
@@ -18,7 +18,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "eslint": "^2.4.0"
+    "babel-eslint": "^5.0.0",
+    "eslint": "^2.4.0",
+    "estraverse-fb": "^1.3.1"
   },
   "devDependencies": {
     "mocha": "^2.4.5",
