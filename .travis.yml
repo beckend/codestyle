@@ -1,0 +1,15 @@
+sudo: false
+language: node_js
+node_js:
+ - "4"
+
+install:
+ - npm install npm -g
+ - npm install
+
+script:
+ - npm run lint
+ - npm test
+
+notifications:
+  slack: leovegas:0swMFkpVpwX5fTN4XlO6qGH8
