@@ -1,5 +1,7 @@
-# codestyle
+# Codestyle
+
+Uses eslint `2.x`
 
 ```
-npm install codestyle eslint babel-eslint eslint-plugin-react
+npm install codestyle
 ```
