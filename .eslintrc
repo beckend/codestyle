@@ -25,8 +25,9 @@
     "no-unexpected-multiline": 2,
     "no-unreachable": 2,
     "use-isnan": 2,
-    "valid-jsdoc": [ 1, {
+    "valid-jsdoc": [ 2, {
       "requireReturnDescription": false,
+      "requireReturn": false,
       "requireParamDescription": false,
       "prefer": {
         "return": "returns"
