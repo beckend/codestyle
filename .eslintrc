@@ -165,7 +165,7 @@
     "no-sync": 1,
 
 
-    "arrow-parens": [ 2, "always" ],
+    "arrow-parens": 0,
     "arrow-spacing": [ 2, { "before": true, "after": true } ],
     "constructor-super": 2,
     "generator-star-spacing": [ 2, "after" ],
