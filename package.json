@@ -3,14 +3,20 @@
   "version": "3.0.0",
   "description": "",
   "scripts": {
-    "test": "./node_modules/.bin/_mocha"
+    "lint": "eslint test/**/*.js *.js",
+    "test": "./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha -- --full-trace",
+    "ci": "./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha -- -R tap > test-results.tap && ./node_modules/.bin/istanbul report clover",
+    "prepublish": "npm run lint && npm run test"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "babel-eslint": "^5.0.0",
-    "eslint": "^2.2.0",
+    "eslint": "^2.4.0",
     "mocha": "^2.4.5"
+  },
+  "devDependencies": {
+    "istanbul": "^0.4.2"
   }
 }

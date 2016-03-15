@@ -1,3 +1,4 @@
+/* eslint func-names: 1, prefer-arrow-callback: 1, no-path-concat: 1 */
 /* globals describe:true, it:true */
 'use strict';
 
