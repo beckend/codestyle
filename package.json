@@ -18,11 +18,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "babel-eslint": "^5.0.0",
-    "eslint": "^2.4.0",
-    "mocha": "^2.4.5"
+    "eslint": "^2.4.0"
   },
   "devDependencies": {
+    "mocha": "^2.4.5",
     "istanbul": "^0.4.2"
   }
 }

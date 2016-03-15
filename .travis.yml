@@ -10,6 +10,3 @@ install:
 script:
  - npm run lint
  - npm test
-
-notifications:
-  slack: leovegas:0swMFkpVpwX5fTN4XlO6qGH8
