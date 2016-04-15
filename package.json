@@ -1,6 +1,6 @@
 {
   "name": "codestyle",
-  "version": "4.0.7",
+  "version": "4.0.8",
   "repository": "git@github.com:LeoGears/codestyle.git",
   "description": "ESLint configuration used at Gears of Leo",
   "scripts": {
