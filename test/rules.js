@@ -1,7 +1,7 @@
 /* eslint func-names: 1, prefer-arrow-callback: 1, no-path-concat: 1 */
 /* globals describe:true, it:true */
 var assert = require('assert');
-var fs     = require('fs');
+var fs = require('fs');
 var eslint = require('eslint');
 
 
