@@ -4,8 +4,15 @@
     "react"
   ],
   "rules": {
-    "no-extra-parens": 0,
-    "react/display-name": [ 2, { "acceptTranspilerName": true } ],
+    "no-extra-parens": [0, "all", {
+      conditionalAssign: true,
+      nestedBinaryExpressions: false,
+      returnAssign: false,
+    }],
+    "require-jsdoc": 0,
+    "valid-jsdoc": 0,
+    "jsx-quotes": [2, "prefer-double"],
+    "react/display-name": [ 2, { "ignoreTranspilerName": false } ],
     "react/forbid-prop-types": 2,
     "react/jsx-boolean-value": 2,
     "react/jsx-closing-bracket-location": 2,
@@ -13,14 +20,14 @@
     "react/jsx-handler-names": 2,
     "react/jsx-indent-props": [ 2, 2 ],
     "react/jsx-indent": [ 2, 2 ],
+    "indent": [2, 2, { SwitchCase: 1 }],
     "react/jsx-key": 2,
     "react/jsx-max-props-per-line": [ 2, { "maximum": 4 }],
     "react/jsx-no-bind": 2,
     "react/jsx-no-duplicate-props": 2,
-    "react/jsx-no-literals": 2,
+    "react/jsx-no-literals": 0,
     "react/jsx-no-undef": 2,
     "react/jsx-pascal-case": 2,
-    "react/jsx-quotes": 2,
     "react/jsx-sort-prop-types": [ 0, {
       "callbacksLast": false,
       "ignoreCase": true
@@ -43,11 +50,24 @@
     "react/no-string-refs": 2,
     "react/no-unknown-property": 2,
     "react/prefer-es6-class": 2,
+    "react/prefer-stateless-function": 2,
     "react/prop-types": 2,
     "react/react-in-jsx-scope": 2,
     "react/require-extension": 2,
+    "react/require-render-return": 2,
     "react/self-closing-comp": 2,
-    "react/sort-comp": 2,
+    "react/jsx-space-before-closing": [2, "always"],
+    "react/sort-comp": [2, {
+      order: [
+        "static-methods",
+        "lifecycle",
+        "/^on.+$/",
+        "/^(get|set)(?!(InitialState$|DefaultProps$|ChildContext$)).+$/",
+        "everything-else",
+        "/^render.+$/",
+        "render"
+      ],
+    }],
     "react/wrap-multilines": 2
   },
   "ecmaFeatures": {
