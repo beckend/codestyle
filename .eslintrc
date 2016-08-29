@@ -67,7 +67,17 @@
     "no-lone-blocks": 2,
     "no-loop-func": 2,
     "no-magic-numbers": 0,
-    "no-multi-spaces": 2,
+    "no-multi-spaces":  [
+      "error",
+      {
+        "exceptions":
+        {
+          "Property": true,
+          "VariableDeclarator": true,
+          "ImportDeclaration": true
+        }
+      }
+    ],
     "no-multi-str": 2,
     "no-native-reassign": 2,
     "no-new-func": 2,
@@ -115,7 +125,20 @@
     "func-style": [ 2, "declaration", { "allowArrowFunctions": true } ],
     "id-length": 0,
     "indent": [2, 2, { "SwitchCase": 1 }],
-    "key-spacing": [ 0, { "beforeColon": true, "afterColon": true, "align": "colon" } ],
+    "key-spacing"     : [
+      "error",
+      {
+        "singleLine" : {
+          "beforeColon" : false,
+          "afterColon"  : true
+        },
+        "multiLine"  : {
+          "beforeColon" : true,
+          "afterColon"  : true,
+          "align"       : "colon"
+        }
+      }
+    ],
     "keyword-spacing": [2, {"before": true, "after": true}],
     "linebreak-style": 0,
     "lines-around-comment": [ 2, { "beforeBlockComment": true, "beforeLineComment": false } ],
