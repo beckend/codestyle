@@ -1,6 +1,7 @@
 {
   "parser": "babel-eslint",
   "rules": {
+    "camelcase": 2,
     "comma-dangle": [2, "always-multiline"],
     "no-cond-assign": 2,
     "no-console": 0,
