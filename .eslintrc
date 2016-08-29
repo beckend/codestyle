@@ -2,7 +2,7 @@
   "parser": "babel-eslint",
   "rules": {
     "camelcase": 2,
-    "comma-dangle": [2, "always-multiline"],
+    "comma-dangle": [2, "never"],
     "no-cond-assign": 2,
     "no-console": 0,
     "no-constant-condition": 2,
