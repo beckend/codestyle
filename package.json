@@ -10,7 +10,8 @@
     "lint": "eslint test/* *.js",
     "lint-fix": "eslint test/* *.js --fix",
     "test": "istanbul cover node_modules/mocha/bin/_mocha -- --full-trace test/* test/**/*",
-    "ci": "istanbul cover _mocha -- -R tap test/* test/**/* > test-results.tap && istanbul report clover"
+    "ci": "istanbul cover _mocha -- -R tap test/* test/**/* > test-results.tap && istanbul report clover",
+    "prepublish": "npm run lint && npm run test"
   },
   "engines": {
     "node": ">=6.0.0",
