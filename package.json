@@ -1,21 +1,34 @@
 {
   "name": "codestyle",
-  "version": "15.0.0",
-  "repository": "git@github.com:LeoGears/codestyle.git",
+  "version": "16.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LeoGears/codestyle.git"
+  },
   "description": "ESLint configuration used at Gears of Leo",
   "scripts": {
     "lint": "eslint test/* *.js",
-    "test": "istanbul cover node_modules/mocha/bin/_mocha -- --full-trace",
-    "ci": "istanbul cover node_modules/mocha/bin/_mocha -- -R tap > test-results.tap && istanbul report clover",
-    "prepublish": "npm run lint && npm run test"
+    "lint-fix": "eslint test/* *.js --fix",
+    "test": "istanbul cover node_modules/mocha/bin/_mocha -- --full-trace test/* test/**/*",
+    "ci": "istanbul cover _mocha -- -R tap test/* test/**/* > test-results.tap && istanbul report clover"
+  },
+  "engines": {
+    "node": ">=4.0.0",
+    "npm": ">=3.0.0"
   },
   "contributors": [
     "Mikael Abrahamsson <mikael.abrahamsson@gutro.se>",
     "Sebastian Stenerdal <sebastian.stenerdal@gutro.se>",
     "Enzo Martin <enzo.martin@gutro.se>"
   ],
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "codestyle",
+    "eslint",
+    "eslint rules",
+    "rules",
+    "es6",
+    "react"
+  ],
   "license": "ISC",
   "dependencies": {
     "babel-eslint": "^6.0.0"
