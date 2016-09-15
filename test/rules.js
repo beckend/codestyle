@@ -1,16 +1,17 @@
-/* eslint func-names: 1, prefer-arrow-callback: 0, no-path-concat: 1 */
-/* globals describe:true, it:true */
-var assert = require('assert');
-var fs = require('fs');
-var path = require('path');
-var eslint = require('eslint');
+const assert = require('assert');
+const path = require('path');
+const eslint = require('eslint');
+const fs = require('fs');
 
 
-describe('Base config no deprecations', function testSuite() {
-  it('should return empty messages', function testCase() {
-    var config = JSON.parse(fs.readFileSync(path.join(__dirname, '/../.eslintrc')));
-    var messages = eslint.linter.verify('', config, { filename : 'foo.js' });
+describe('Base config no deprecations', () => {
+  it('should return empty messages', () => {
+    fs.readFile(path.join(__dirname,'../.eslintrc'),(err,data) => {
+      const config = JSON.parse(data);
+      const messages = eslint.linter.verify('', config, { filename : 'foo.js' });
 
-    assert.deepEqual(messages, []);
+      assert.equal(err,null);
+      assert.deepEqual(messages, []);
+    });
   });
 });
