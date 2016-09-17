@@ -192,7 +192,7 @@
     "no-sync": 2,
 
 
-    "arrow-parens": 2,
+    "arrow-parens": [2, "as-needed", { "requireForBlockBody": true }],
     "no-confusing-arrow": 2,
     "arrow-body-style": 0,
     "arrow-spacing": [ 2, { "before": true, "after": true } ],
