@@ -4,6 +4,10 @@
     "array-callback-return": 2,
     "class-methods-use-this": 2,
     "camelcase": 2,
+    "comma-spacing": [2, {
+      "before": false,
+      "after": true
+    }],
     "comma-dangle": [2, "never"],
     "no-cond-assign": 2,
     "no-console": 0,
