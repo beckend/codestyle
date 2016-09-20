@@ -32,6 +32,7 @@
     "no-sparse-arrays": 2,
     "no-unexpected-multiline": 2,
     "no-unreachable": 2,
+    "no-unused-vars": ["error", { "vars": "all", "args": "after-used" }],
     "use-isnan": 2,
     "valid-jsdoc": [ 2, {
       "requireReturnDescription": false,
@@ -42,8 +43,6 @@
       }
     }],
     "valid-typeof": 2,
-
-
     "accessor-pairs": 2,
     "block-scoped-var": 2,
     "complexity": [ 2, 10 ],
@@ -124,7 +123,6 @@
     "no-undef-init": 2,
     "no-undef": 2,
     "no-undefined": 0,
-    "no-unused-vars": 0,
     "no-use-before-define": 2,
     "eol-last": 0,
     "func-names": 0,
