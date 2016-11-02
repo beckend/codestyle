@@ -4,6 +4,7 @@
     "react"
   ],
   "rules": {
+    "no-invalid-this": 0,
     "no-extra-parens": [0, "all", {
       conditionalAssign: true,
       nestedBinaryExpressions: false,
