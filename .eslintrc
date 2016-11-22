@@ -133,13 +133,12 @@
       "error",
       {
         "singleLine" : {
-          "beforeColon" : true,
+          "beforeColon" : false,
           "afterColon"  : true
         },
         "multiLine"  : {
-          "beforeColon" : true,
+          "beforeColon" : false,
           "afterColon"  : true,
-          "align"       : "colon"
         }
       }
     ],
